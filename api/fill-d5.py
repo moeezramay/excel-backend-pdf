@@ -24,6 +24,10 @@ def set_need_appearances_and_rotation(writer: PdfWriter, rotation_deg: int = 90)
             if "/AP" in annot:
                 del annot["/AP"]
 
+def ping():
+    return "ok", 200
+
+
 @app.post("/")
 def fill_d5():
     data = request.get_json(silent=True)
