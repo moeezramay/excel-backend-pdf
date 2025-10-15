@@ -24,7 +24,7 @@ def set_need_appearances_and_rotation(writer: PdfWriter, rotation_deg: int = 90)
             if "/AP" in annot:
                 del annot["/AP"]
 
-@app.post("/api/fill-d5")
+@app.post("/")
 def fill_d5():
     data = request.get_json(silent=True)
     if not data or "fields" not in data or not isinstance(data["fields"], dict):
