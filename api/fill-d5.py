@@ -24,6 +24,7 @@ def set_need_appearances_and_rotation(writer: PdfWriter, rotation_deg: int = 90)
             if "/AP" in annot:
                 del annot["/AP"]
 
+@app.get("/")
 def ping():
     return "ok", 200
 
