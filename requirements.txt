@@ -1,2 +1,2 @@
-Flask==3.0.3
-pypdf==5.0.1
+Flask
+pypdf
