@@ -2,6 +2,10 @@
 from flask import Flask, request, jsonify
 app = Flask(__name__)
 
+@app.route("/")
+def root():
+    return "ok", 200
+
 @app.get("/")
 def ping():
     return "ok", 200
